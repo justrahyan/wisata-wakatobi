@@ -1,0 +1,187 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Plus Jakarta Sans", "sans-serif";
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #fff;
+}
+nav.navbar {
+    position: fixed;
+    background-color: #fff;
+    box-shadow: 0px 0px 50px 1px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin: auto auto;
+    border-radius: 0;
+    transition: 0.5s;
+    top: 0%;
+    left: 0%;
+    z-index: 10;
+    transform: translate(0%, 0%);
+}
+nav .container-fluid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    align-items: end;
+    margin: auto auto;
+}
+nav .container-fluid a h5{
+    font-weight: 600;
+    margin-top: 10px;
+}
+nav .container-fluid a {
+    width: 5%;
+}
+nav .container-fluid a img {
+    width: 80%;
+}
+nav .container-fluid .navbar-collapse ul li a {
+    width: 100%;
+}
+nav .container-fluid .navbar-collapse ul li a.active{
+    font-weight: 900;
+}
+
+/* Card Transaksi */
+.transaksi header{
+    text-align: center;
+    padding: 3rem 2rem;
+}
+.transaksi header h1{
+    color: #264e50;
+    font-weight: 700;
+}
+
+.card {
+    margin-bottom: 15px;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.card-body .d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-body .row {
+    margin-top: 10px;
+}
+
+.card-body .col-md-6 {
+    display: flex;
+    flex-direction: column;
+}
+
+footer{
+    width: 100%;
+    padding: 2rem 0;
+    background-color: #264e50;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+footer .footer-menu{
+    width: 75%;
+    margin: auto auto;
+}
+footer .footer-menu ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+footer .footer-menu ul li{
+    list-style: none;
+    color: #fff;
+}
+footer .footer-menu ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+footer .footer-menu ul li a:hover{
+    text-decoration: underline;
+}
+
+/* Responsive for Tablets */
+@media (max-width: 768px) {
+    .hero-wrapper .hero-container {
+        width: 80%;
+    }
+
+    .hero-wrapper .hero-container .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    section.article {
+        width: 85%;
+        padding: 5rem 0 0 0;
+    }
+
+    section#paket {
+        width: 85%;
+    }
+
+    section#paket .paket-container {
+        flex-direction: column;
+    }
+
+    section#paket .paket-container .paket-card {
+        width: 90%;
+        margin-bottom: 1rem;
+    }
+
+    section.location {
+        flex-direction: column;
+    }
+
+    section.location img,
+    section.location iframe {
+        width: 100%;
+    }
+
+    footer .footer-menu {
+        width: 90%;
+    }
+
+    footer .footer-menu ul {
+        flex-direction: column;
+    }
+}
+
+/* Responsive for Mobile Phones */
+@media (max-width: 480px) {
+    .hero-wrapper {
+        padding: 9rem 0 3rem 0;
+    }
+
+    .hero-wrapper .hero-container {
+        width: 90%;
+    }
+
+    .hero-wrapper .hero-container .hero-text h1 {
+        font-size: 1.5rem;
+    }
+
+    section.article {
+        width: 95%;
+        padding: 4rem 0 0 0;
+    }
+
+    section#paket {
+        width: 95%;
+    }
+
+    section#paket .paket-container .paket-card h5 {
+        font-size: 1rem;
+    }
+
+    footer .footer-menu ul li {
+        font-size: 0.9rem;
+    }
+}
